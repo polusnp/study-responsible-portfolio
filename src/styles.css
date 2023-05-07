@@ -10,7 +10,7 @@ body {
 
 section {
     background-color: white;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 .hero {
