@@ -1,36 +1,54 @@
-/* * {
+:root {
+    --hero-color: #1c1d25;
+    --main-color: #F5F5F5;
+}
+
+* {
     margin: 0;
     padding: 0;
-} */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: poppins, sans-serif;
     margin: 0;
+    position: relative;
+    
 }
 
 section {
-    background-color: white;
+    background-color: var(--main-color); 
     /* border: solid 1px red; */
 }
 
 .hero {
-    background-color: #1c1d25;
+    background-color: var(--hero-color);
     height: 100vh;
-    color: white;
+    color: var(--main-color);
     font-size: 30px;
 }
 
 footer {
     background-color: black;
     text-align: right;
-    color: white;
-    padding: 40px;
+    color: var(--main-color);
+    padding: 10px;
+}
+
+footer > p {
+    font-size: 20px;
 }
 
 
 nav {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    padding-top: 10px;
+    top: 0px;
 }
 
 ul {
@@ -39,14 +57,17 @@ ul {
     width: 500px;
     justify-content: space-around;
     font-size: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 li {
     text-decoration: none;
+    
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 70px;
     margin: 0;
 }
 
@@ -81,12 +102,17 @@ p {
     width: 200px;
     height: 55px;
     border-radius: 30px;
-    background-color: coral;
+    background-color: 	#FFD700;
     text-align: center;
     font-weight: 300;
     font-size: 30px;
     padding-top: 5px;
     margin-top: 20px;
+    color: #1c1d25;
+}
+
+.button > a {
+    color: var(--hero-color);
 }
 
 .button:hover {
@@ -104,8 +130,7 @@ p {
 
 .logo {
     height: 80px;
-    margin: 15px;
-    
+    border-radius: 20px;
 } 
 
 .social {
@@ -115,15 +140,14 @@ p {
 .sub-section {
     display: flex;
     justify-content: space-around;
-    padding: 80px;
-    
+    padding: 180px 100px;
 }
 
 .sub-section-alt {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 100px 20px;
     height: 100vh;
 }
 
@@ -133,8 +157,8 @@ p {
 
 
 .headshot {
-    width: 300px;
-    border-radius: 150px;
+    width: 250px;
+    border-radius: 125px;
     margin-left: 80px; 
 }
 
@@ -182,11 +206,12 @@ hr {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--main-color);
 }
 
 .hamburger {
     border: none;
     background-color: transparent;
     font-size: 40px;
+    display: none;
 }
