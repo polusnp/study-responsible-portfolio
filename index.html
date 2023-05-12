@@ -12,10 +12,11 @@
     <title>Simple Portfolio HTML/CSS</title>
 </head>
 <body>
-    <section class="hero">
+    <section class="hero" id="home">
         <nav>
             <a href="https://standwithukraine.com.ua" target="_blank"><img class="logo" src="./src/images/logo.jpg" alt="Pavlo Nahurnyi logo"/></a>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -26,9 +27,12 @@
         </nav>
         <div class="hero-area">
             <div class="hero-text">
-                <h1>Pavlo Nahurnyi</h1>
+                <div class="hero-name">
+                    <h1>Pavlo Nahurnyi</h1>
+                    <i id="code-icon" class="fa-solid fa-code fa-beat-fade fa-2xl" style="color: #FFD700;"></i>
+                </div>
                 <p>Web Developer</p>
-                <div class="button"><a href="#about-me">About me</a></div>
+                <div class="button"><a href="#about-me">About me</a></i></div>
             </div>
             <div class="socials">
                 <div>
@@ -52,7 +56,7 @@
     <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About me</h2>
-            <p>Hello. My name is Pavlo Nahurnyi. I am a Web Developer and I am an Industrial Engineer in automotive with background expierence more then ten years too.</p>
+            <p>Hello. My name is Pavlo Nahurnyi. I am a Web Developer and I am an Industrial Engineer in automotive with background expierence more then ten years.</p>
         </div>
         <div class="headshot-container">
             <img class="headshot" src="./src/images/1678308966937.png" alt="Pavlo Nahurnyi headshot">
