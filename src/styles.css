@@ -218,8 +218,18 @@ hr {
 
 .project-link {
     text-decoration: none;
-    color: #ef744b;
+    color: #FFD700;
+    font-weight: 600;
 }
+
+.project-link:hover {
+    color: rgb(209, 215, 46);
+}
+
+.project-link:active {
+    color: #808080;
+}
+
 
 a {
     text-decoration: none;
