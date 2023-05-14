@@ -256,6 +256,15 @@ a {
         font-size: 20px;
     }
 
+    .hero-text {
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    .social {
+        margin: 20px;
+    }    
+
     .logo {
         height: 30px;
     }
@@ -267,4 +276,6 @@ a {
     #code-icon {
         margin: 40px 0px 50px 30px;
     }
+
+  
 }
