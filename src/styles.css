@@ -12,9 +12,7 @@
 
 body {
     font-family: poppins, sans-serif;
-    margin: 0;
-    position: relative;
-    
+    position: relative;  
 }
 
 section {
@@ -39,7 +37,6 @@ footer > p {
     font-size: 20px;
 }
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -59,7 +56,6 @@ ul {
     margin-right: 40px;
 }
 
-
 li {
     text-decoration: none;
 }
@@ -71,8 +67,6 @@ ul > li > a:hover {
 ul > li > a:active {
     color: #808080;
 }
-
-
 
 h1 {
     font-size: 70px;
@@ -197,6 +191,7 @@ p {
     }
 }
 
+
 .project-img {
     margin-top: 20px;
     width: 250px;
@@ -221,7 +216,6 @@ hr {
 .project-link:active {
     color: #808080;
 }
-
 
 a {
     text-decoration: none;
@@ -275,7 +269,5 @@ a {
 
     #code-icon {
         margin: 40px 0px 50px 30px;
-    }
-
-  
+    } 
 }
