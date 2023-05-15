@@ -158,7 +158,6 @@ p {
     flex-direction: column;
     text-align: center;
     padding: 100px 20px;
-    height: 100vh;
 }
 
 .headshot {
@@ -259,6 +258,10 @@ a {
         margin: 20px;
     }    
 
+    .svg-icon {
+        width: 30px;
+    }
+
     .logo {
         height: 30px;
     }
@@ -267,7 +270,92 @@ a {
         font-size: 50px;
     }
 
+    h2 {
+        font-size: 40px;
+    }
+
     #code-icon {
         margin: 40px 0px 50px 30px;
-    } 
+    }
+
+    .sub-section {
+        padding: 200px 40px 50px 40px;
+    }
+
+    .headshot {
+        width: 200px;
+        border-radius: 100px;
+        margin-left: 40px; 
+    }
+
+    .information > p {
+        font-size: 30px;
+    }
+
+    .sub-section-alt {
+        padding: 160px 20px;
+    }
+
+    .project-card {
+        width: 300px;
+        height: 460px;
+        box-shadow: 5px 5px 20px #716f6f;
+        margin: 10px;
+    }
+
+
+    h3 {
+        font-size: 15px;
+    }
+
+    footer > p {
+        font-size: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #code-icon {
+        margin: 24px 0px 40px 10px;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .button {
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+
+    .sub-section {
+        padding: 200px 40px 50px 40px;
+    }
+
+    .headshot {
+        width: 120px;
+        border-radius: 60px;
+        margin-left: 20px; 
+    }
+
+    .information > p {
+        font-size: 20px;
+    }
+
+   
+
+    
 }
