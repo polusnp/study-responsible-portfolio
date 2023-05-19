@@ -109,13 +109,36 @@
                 <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
             </a>
         </div>
-        <form action="https://formsubmit.co/polusnp@gmail.com" method="POST">
+        
+        <form name="emailContact" method="POST">
             <input type="hidden" name="_subject" value="New email!">
-            <input class="email-address" type="email" name="email" placeholder="Email Address" required>
-            <input class="message" type="text" name="message" placeholder="Write your message here" required>
-            <button class="send-message" type="submit">Send</button>
+            <input class="email-address" type="email" name="userEmail" placeholder="Email Address" required>
+            <input class="message" type="text" name="userMessage" placeholder="Write your message here" required>
+            <input class="send-message" name="send" type="submit" value="Send">
        </form>
+
+           <?php if(!empty($message)){ ?>
+              <div class="success">
+                  <strong><?php echo $message; ?></strong>
+              </div>
+           <?php } ?>
+
     </footer>
     <script src="./src/app.js"></script>
+    <?php
+      if(!empty($_POST["send"])){
+          $userEmail = $_POST["userEmail"];
+          $userMessage = $_POST["userMessage"];
+          $toEmail = "polusnp@gmail.com";
+
+          $mailHeaders = "Name: " . $userEmail .
+          "\r\n Message: " . $userMessage . "\r\n";
+
+          if(mail($toEmail, $userEmail, $mailHeaders)){
+              $message = "Received successfully.";
+          }
+      }
+
+    >
 </body>
 </html>

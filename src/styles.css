@@ -80,6 +80,20 @@ footer > p {
     color: whitesmoke;
 }
 
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+    background-color: lightgreen;
+    margin: 0 auto;
+    display: block;
+    color: black;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 10px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
