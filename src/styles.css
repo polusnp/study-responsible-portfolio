@@ -55,8 +55,6 @@ form {
     text-align: center;
 }
 
-
-
 .send-message {
     background-color:	#FFD700;
     color: black;
@@ -71,6 +69,15 @@ form {
 
 footer > p {
     font-size: 20px;
+}
+
+.send-message:hover {
+    background-color: rgb(209, 215, 46);
+}
+
+.send-message:active {
+    background-color: #605959;
+    color: whitesmoke;
 }
 
 nav {
@@ -345,7 +352,12 @@ a {
     footer > p {
         font-size: 10px;
     }
+
+    .footer-socials {
+        margin: 0;
+    }
 }
+
 
 @media only screen and (max-width: 600px) {
 
@@ -394,18 +406,17 @@ a {
     }
 
     form {
-        width: 380px;
         display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        width: 340px;
     }
     
     .email-address, .message {
         color: black;
         height: 20px;
-        
         font-family: 'poppins', sans-serif;
-        
         border: #FFD700 solid 2px;
         border-radius: 10px;
         text-align: center;
@@ -414,12 +425,13 @@ a {
     .send-message {
         background-color:	#FFD700;
         color: black;
-        height: 20px;
-        width: 40px;
+        height: 22px;
+        width: 100%;
         font-family: 'poppins', sans-serif;
-        font-weight: 600;
+        font-weight: 300;
         border-radius: 10px;
         border: rosybrown solid 2px;
         cursor: pointer;
+        margin: 0 auto;
     }
 }
