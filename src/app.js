@@ -1,3 +1,5 @@
+// function navbar list used for mobile resolutions
+
 const hambButton = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav-list');
 
@@ -6,6 +8,8 @@ function toggleButton() {
 }
 
 hambButton.addEventListener('click', toggleButton);
+
+// jQuery animation for .hero-name-animate
 
 const element = document.querySelector('.hero-name-animate');
 element.classList.add('animate__animated', 'animate__shakeX');
