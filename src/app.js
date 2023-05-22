@@ -9,7 +9,7 @@ function toggleButton() {
 
 hambButton.addEventListener('click', toggleButton);
 
-// jQuery animation for .hero-name-animate
+// css animation for .hero-name-animate
 
 const element = document.querySelector('.hero-name-animate');
 element.classList.add('animate__animated', 'animate__shakeX');
