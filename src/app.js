@@ -6,3 +6,9 @@ function toggleButton() {
 }
 
 hambButton.addEventListener('click', toggleButton);
+
+const element = document.querySelector('.hero-name-animate');
+element.classList.add('animate__animated', 'animate__shakeX');
+
+document.documentElement.style.setProperty('--animate-duration', '1s');
+
