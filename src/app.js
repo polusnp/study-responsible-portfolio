@@ -14,5 +14,5 @@ hambButton.addEventListener('click', toggleButton);
 const element = document.querySelector('.hero-name-animate');
 element.classList.add('animate__animated', 'animate__flipInX');
 
-document.documentElement.style.setProperty('--animate-duration', '1s');
+document.documentElement.style.setProperty('--animate-duration', '3s');
 
