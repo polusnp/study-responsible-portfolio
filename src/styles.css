@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    z-index: 2;
 }
 
 body {
@@ -25,6 +26,8 @@ section {
     color: var(--main-color);
     font-size: 30px;
 }
+
+
 
 footer {
     background-color: black;
