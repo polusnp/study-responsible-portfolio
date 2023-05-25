@@ -1,2 +1,2 @@
-# study-responsible-portfolio
+# study-responsive-portfolio
 HTML/CSS/Javascript
