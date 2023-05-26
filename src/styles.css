@@ -26,8 +26,6 @@ section {
     font-size: 30px;
 }
 
-
-
 footer {
     background-color: black;
     text-align: center;
@@ -58,7 +56,7 @@ form {
 }
 
 .send-message {
-    background-color:	#FFD700;
+    background-color: #FFD700;
     color: black;
     height: 30px;
     width: 80px;
