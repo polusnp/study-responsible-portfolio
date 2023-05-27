@@ -20,7 +20,10 @@ section {
 }
 
 .hero {
-    background-color: var(--hero-color);
+    background-image: url('./images/panoramic-night.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     color: var(--main-color);
     font-size: 30px;
@@ -98,10 +101,15 @@ nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    background-color: black;
+    background: linear-gradient(
+        90deg,
+        black 40%,
+        #202132
+    );
     width: 100vw;
     padding-top: 10px;
     top: 0px;
+    z-index: 1;
 }
 
 ul {
@@ -162,7 +170,7 @@ p {
 }
 
 #code-icon {
-    margin: 60px 0px 50px 30px;
+    margin: 50px 0px 50px 30px;
 }
 
 .button {
@@ -288,6 +296,7 @@ a {
         background-color: transparent;
         font-size: 30px;
         margin-right: 20px;
+        cursor: pointer;
     }
 
     ul {
@@ -319,7 +328,7 @@ a {
     }
 
     .logo {
-        height: 50px;
+        height: 40px;
     }
 
     h1 {
@@ -391,6 +400,14 @@ a {
 
     p {
         font-size: 20px;
+    }
+
+    nav {
+        background: linear-gradient(
+            90deg,
+            black 60%,
+            #202132
+        );
     }
 
     .button {
