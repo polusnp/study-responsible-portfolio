@@ -20,7 +20,15 @@ section {
 }
 
 .hero {
-    background-image: url('./images/panoramic-night.avif');
+    /* background-image: url('./images/panoramic-night.jpg'); */
+    /* Fallback */
+    /* background-image: url('./images/panoramic-night.jpg'); */
+
+    /* Chrome/Edge/Opera/Samsung, Safari will fallback to this as well */
+    /* background-image: -webkit-image-set(url('./images/panoramic-night.jpg') 1x, url('./images/panoramic-night-2x.jpg') 2x); */
+
+    /* Standard use */
+    background-image: image-set('./images/panoramic-night.jpg' 1x, './images/panoramic-night-2x.jpg' 2x);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
